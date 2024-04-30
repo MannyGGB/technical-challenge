@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Instructor Technical Challenge:
+Using NextJS 14 create:
 
-## Getting Started
+Time limit: 1 hour
 
-First, run the development server:
+Submission: GitHub repo link and deployment url
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Stretch submission: Screenshot of the DB Schema in the README.md file of the project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Accomplished:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- An API endpoint at /otters that returns an array of objects (example data is below)
+- A server rendered page that retrieves information from that endpoint and displays that data in a pleasing way
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Blocks:
 
-## Learn More
+- A dynamic API endpoint that returns an individual item
+- A dynamic page that shows only 1 otter item, using the dynamic endpoint
 
-To learn more about Next.js, take a look at the following resources:
+Not attempted:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- STRETCH: store the data in a database and have the API retrieve it from there
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Reflections:
 
-## Deploy on Vercel
+- I had a clear idea in my head of what I wanted to accomplish and how to structure my app. I started by creating the routes and folder tree to contain the static and dynamic routes with their respective pages.
+- I started by mapping through the data to show on the otters page.
+- When I moved to the dynamic route, I found a big block when I tried to use params to display the data dynamically. I spent most of the time trying different solutions, when I realised that up until now, I have only had to retrieve data from external sources (Postgres database or third-party API). By the time I devised a plan b to create a database to retrieve the data that way, I ran out of time to complete this task.
+- I spent the last minutes of the time trying to style the page using Tailwind and the globals.css.
+- I finally deployed to vercel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+What I would have done differently:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Given another chance, I would have tried to think laterally, forget about the local API, and move to a different solution, like an external database, which felt like a more comfortable environment.
+- Sticking to a setting that clearly did not work for me is a point to work on. I need to make the code work for me, not the other way around.
+
+References:
+
+- I consulted these references before attempting the task:
+  - https://tailwindcomponents.com/cheatsheet/
+  - Next.js docs
+  - Previous personal projects
